@@ -31,3 +31,10 @@ The resulting data placed in tweets.csv
 This Jupyter Notebook cleans the tweets and uses TextBlob sentiment analyzer to create polarity scores for each tweet. Each day worth of tweets is then averaged into one resulting polarity score. Finally, the notebook plots these averages across the month, which leads to the finding below.
 
 ![image](https://user-images.githubusercontent.com/89881145/165219720-8a0a0472-34ec-477e-8d75-be7ce89c6432.png)
+
+## Preliminary Findings
+While there is a significant amount of variation, there appears to be sharp dip around August 23, 2021 in sentiment. This is relevant to my research, as it is two days following the CDC's tweet informing US citizens not to use ivermectin.
+https://twitter.com/US_FDA/status/1429050070243192839?s=20&t=fHNQHn8OFKigT775wYA1ag
+
+## Citation information
+Towey, Allison. Sentiment Analysis of Tweets Mentioning "Ivermectin", (2022), GitHub repository, https://github.com/macs30200-s22/replication-materials-atowey-uchi/.
