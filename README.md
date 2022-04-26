@@ -1,18 +1,33 @@
-Supplemental Code: Example
-The code and data in this repository is an example of a reproducible research workflow for MACS 30200 "Perspectives on Computational Research" at the University of Chicago.
+# Sentiment Analysis of Ivermectin Tweets (August 2021)
+The code and data in this repository are for Allison Towey's Perspectives on Computational Ressearch project.
 
-The code is written in Python 3.9.7 and all of its dependencies can be installed by running the following in the terminal (with the requirements.txt file included in this repository):
+The code is written in Python 3.9.7. The following packages are required to run the code:
+#### Utilities
+import re
+import numpy as np
+import pandas as pd
+#### Scraping
+import twint
+import nest_asyncio
+#### Plotting
+import seaborn as sns
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+#### nltk and sentiment analysis
+from nltk.stem import WordNetLemmatizer
+import nltk
+from textblob import TextBlob
 
-pip install -r requirements.txt
-Then, you can import the analysis module located in this repository to reproduce the analysis in the (hypothetical) publication that this code supplements (in a Jupyter Notebook, like README.ipynb in this repository, or in any other Python script):
+## Scraping:
+### Run tweet_scraping.ipynb.
+This Jupyter Notebook scrapes tweets mentioning "ivermectin" from August 3, 2021 to September 30, 2021.
 
-import analysis
-You can then use the process_data function in the analysis module to process the data and get it ready to analyze. The plot function will reproduce Figure 1 from the (hypothetical) publication.
+The resulting data placed in tweets.csv
 
-df = analysis.process_data('data.csv')
-analysis.plot(df)
-png
+*Note, due to some unexpecting bugs in the Twint API, there are only around 4,300 tweets scraped. Further investigation is needed to understand why such a small number of tweets were found.
 
-Alternatively, to replicate the analysis and produce all of the figures and quantitative analyses from the (hypothetical) publication that this code supplements, build and run the Dockerfile included in this repository via the instructions in the file).
+## Sentiment Analysis:
+### Run sentiment_analysis.ipynb
+This Jupyter Notebook cleans the tweets and uses TextBlob sentiment analyzer to create polarity scores for each tweet. Each day worth of tweets is then averaged into one resulting polarity score. Finally, the notebook plots these averages across the month, which leads to the finding below.
 
-If you use this repository for a scientific publication, we would appreciate it if you cited the Zenodo DOI (see the "Cite as" section on our Zenodo page for more details).
+![image](https://user-images.githubusercontent.com/89881145/165219720-8a0a0472-34ec-477e-8d75-be7ce89c6432.png)
