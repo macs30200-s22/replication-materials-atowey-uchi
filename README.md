@@ -1,6 +1,9 @@
 # Sentiment Analysis of Ivermectin Tweets (August 2021)
 The code and data in this repository are for Allison Towey's Perspectives on Computational Ressearch project.
 
+Please note that due to the size of the tweets file, there are unable to all be updated in this github repository.
+
+
 The code is written in Python 3.9.7. The following packages are required to run the code:
 #### Utilities
 import re
