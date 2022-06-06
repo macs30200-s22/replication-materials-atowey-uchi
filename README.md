@@ -1,25 +1,17 @@
-# Sentiment Analysis of Ivermectin Tweets (August 2021)
-The code and data in this repository are for Allison Towey's Perspectives on Computational Ressearch project.
+# Public Perception of Misinformation on Twitter: 
+A Temporal Analysis of Sentiment Towards Ivermectin, 2021
 
-Please note that due to the size of the tweets file, there are unable to all be updated in this github repository.
+Allison M. Towey
+The University of Chicago, Masters in Computational Social Science
+Advised by: Professor Sabrina Nardin
+June 3, 2022
+
+The code and data in this repository are for Allison Towey's Perspectives on Computational Research Project.
+
+Please note that due to the size of the CSV file of tweets, the data cannot all be found on the repository link; you can contact the author to receive the list of tweet IDs scraped and rehydrate the tweets to complete the analysis.
 
 
-The code is written in Python 3.9.7. The following packages are required to run the code:
-#### Utilities
-import re
-import numpy as np
-import pandas as pd
-#### Scraping
-import twint
-import nest_asyncio
-#### Plotting
-import seaborn as sns
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-#### nltk and sentiment analysis
-from nltk.stem import WordNetLemmatizer
-import nltk
-from textblob import TextBlob
+## Requirements:
 
 ## Scraping:
 ### Run tweet_scraping.ipynb.
