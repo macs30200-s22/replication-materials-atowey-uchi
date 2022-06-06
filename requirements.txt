@@ -1,0 +1,4 @@
+pandas==1.3.5
+matplotlib==3.4.3
+nltk==3.7
+snscrape==0.4.3.20220106
