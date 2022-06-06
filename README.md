@@ -1,5 +1,5 @@
-# Public Perception of Misinformation on Twitter: 
-A Temporal Analysis of Sentiment Towards Ivermectin, 2021
+# Public Perception of Misinformation on Twitter
+## A Temporal Analysis of Sentiment Towards Ivermectin, 2021
 
 Allison M. Towey
 The University of Chicago, Masters in Computational Social Science
