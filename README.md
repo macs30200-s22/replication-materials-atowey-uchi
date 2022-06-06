@@ -2,8 +2,11 @@
 ## A Temporal Analysis of Sentiment Towards Ivermectin, 2021
 
 Allison M. Towey
+
 The University of Chicago, Masters in Computational Social Science
+
 Advised by: Professor Sabrina Nardin
+
 June 3, 2022
 
 The code and data in this repository are for Allison Towey's Perspectives on Computational Research Project.
